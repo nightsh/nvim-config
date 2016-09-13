@@ -11,10 +11,10 @@ $ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
 $ git clone https://github.com/nightsh/nvim-config.git ~/.config/nvim
 ```
 
-(3) Then install everything in the list (do this in nvim):
+(3) Then install everything in the list:
 
 ```
-:PlugInstall
+$ nvim -c PlugInstall
 ```
 
 (4) Profit!
