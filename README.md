@@ -11,6 +11,12 @@ $ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
 $ git clone https://github.com/nightsh/nvim-config.git ~/.config/nvim
 ```
 
-(3) Profit!
+(3) Then install everything in the list (do this in nvim):
+
+```
+:PlugInstall
+```
+
+(4) Profit!
 
 ![Sample Python code with multiple buffers and splits](https://github.com/nightsh/nvim-config/raw/master/nvim_unite+nerdtree+python+gruvbox.png "Neovim and Python")
