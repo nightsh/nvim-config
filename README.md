@@ -1,17 +1,17 @@
-(1) Run this first:
+(1) Run this first to create a backup of your existing configuration directory,
+if any:
 
 ```
-$ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+$ if [[ -d ~/.config/nvim ]]; then mv ~/.config/nvim ~/.config/nvim.bak; fi
 ```
 
-(2) Then clone the repo in your Neovim config directory:
+(2) Then clone the repo in your Neovim config path:
 
 ```
 $ git clone https://github.com/nightsh/nvim-config.git ~/.config/nvim
 ```
 
-(3) Then install everything in the list:
+(3) Install everything in the list:
 
 ```
 $ nvim -c PlugInstall
