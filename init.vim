@@ -2,74 +2,70 @@
 " Bundles
 " --------------------------------------------------------------------
 call plug#begin('~/.config/nvim/plugged')
-Plug 'L9'
-Plug 'python.vim'
-Plug 'pythoncomplete'
-Plug 'taglist.vim'
-Plug 's3rvac/AutoFenc'
-Plug 'sandeepcr529/Buffet.vim'
-Plug 'vim-scripts/EasyGrep'
-Plug 'rking/ag.vim'
-Plug 'godlygeek/csapprox'
-Plug 'zchee/deoplete-jedi'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'dsawardekar/ember.vim'
-Plug 'mattn/emmet-vim'
-Plug 'Shougo/neomru.vim'
-Plug 'equalsraf/neovim-gui-shim'
-Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree'
-Plug 'myusuf3/numbers.vim'
-Plug 'rayburgemeestre/phpfolding.vim'
-Plug 'dsawardekar/portkey'
-Plug 'klen/python-mode'
-Plug 'vim-scripts/restore_view.vim'
-Plug 'vim-scripts/tComment'
-Plug 'godlygeek/tabular'
-Plug 'majutsushi/tagbar'
-Plug 'tomtom/tlib_vim'
-Plug 'mbbill/undotree'
-Plug 'tsukkee/unite-help'
-Plug 'Shougo/unite-outline'
-Plug 'Shougo/unite.vim'
-Plug 'tpope/vim-abolish'
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'xsbeats/vim-blade'
-Plug 'tpope/vim-bundler'
-Plug 'gorodinskiy/vim-coloresque'
-Plug 'flazz/vim-colorschemes'
-Plug 'flazz/vim-colorschemes'
-Plug 'hail2u/vim-css3-syntax'
-Plug 'szw/vim-ctrlspace'
-Plug 'dhruvasagar/vim-dotoo'
-Plug 'Lokaltog/vim-easymotion'
-Plug 'tpope/vim-fugitive'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'pangloss/vim-javascript'
-Plug 'maksimr/vim-jsbeautify'
-Plug 'elzr/vim-json'
-Plug 'groenewege/vim-less'
-Plug 'tpope/vim-markdown'
-Plug 'xolox/vim-misc'
-Plug 'sickill/vim-monokai'
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'kurkale6ka/vim-pairs'
-Plug 'spf13/vim-preview'
-Plug 'rodjek/vim-puppet'
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-rake'
-Plug 'tpope/vim-repeat'
-Plug 'vim-ruby/vim-ruby'
-Plug 'garbas/vim-snipmate'
-Plug 'honza/vim-snippets'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-unimpaired'
-Plug 'thinca/vim-unite-history'
-Plug 'mikewest/vimroom'
-Plug 'airblade/vim-gitgutter'
-Plug 'morhetz/gruvbox'
+Plug 'L9'                         " Augmented Vim :-)
+Plug 'python.vim'                 " Python syntax highlighting
+Plug 'pythoncomplete'             " Python autocomplete
+Plug 'taglist.vim'                " Provides an overview of the source code using [c]tags
+Plug 's3rvac/AutoFenc'            " Automatically detect and set file encoding after opening
+Plug 'sandeepcr529/Buffet.vim'    " Buffer manager
+Plug 'vim-scripts/EasyGrep'       " Search and replace operations (across multiple files)
+Plug 'godlygeek/csapprox'         " Make gvim-only colorschemes work better in terminals
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }  " Autocomplete plugin, successor of neocomplete
+Plug 'zchee/deoplete-jedi'        " Deoplete plugin for Python
+Plug 'dsawardekar/ember.vim'      " Ember.js support
+Plug 'mattn/emmet-vim'            " Emmet support
+Plug 'Shougo/neomru.vim'          " MRU plugin includes unite.vim MRU sources
+Plug 'equalsraf/neovim-gui-shim'  " Small features for Neovim GUIs
+Plug 'scrooloose/nerdcommenter'   " Easy commenting
+Plug 'scrooloose/nerdtree'        " File browser with bookmarks
+Plug 'myusuf3/numbers.vim'        " Better line numbers
+Plug 'rayburgemeestre/phpfolding.vim'  " Automatic folding for PHP stuff
+Plug 'dsawardekar/portkey'        " Rails friendly editing (see https://github.com/dsawardekar/portkey)
+Plug 'klen/python-mode'           " Python friendly Vim
+Plug 'vim-scripts/restore_view.vim'  " Restore last cursor position and folding when reopening a file
+Plug 'vim-scripts/tComment'       " File type sensible comments
+Plug 'godlygeek/tabular'          " Source code alignment for your OCD
+Plug 'majutsushi/tagbar'          " Display tags in a window, ordered by scope
+Plug 'tomtom/tlib_vim'            " Small utility functions, mostly required by some plugins
+Plug 'mbbill/undotree'            " A navigable tree of undo operations (think like Git for undos)
+Plug 'tsukkee/unite-help'         " Help for Unite
+Plug 'Shougo/unite-outline'       " Buffer outline view in Unite
+Plug 'Shougo/unite.vim'           " Search and display information from arbitrary sources https://github.com/Shougo/unite.vim
+Plug 'tpope/vim-abolish'          " Words abbreviation, substitution, coercion https://github.com/tpope/vim-abolish
+Plug 'MarcWeber/vim-addon-mw-utils'  " Small utility to deal with long Ex command outputs
+Plug 'vim-airline/vim-airline'    " Airline is a powerline implementation for Vim
+Plug 'vim-airline/vim-airline-themes'  " Themes for the airline!
+Plug 'xsbeats/vim-blade'          " Syntax highlighting for Blade templates
+Plug 'tpope/vim-bundler'          " Lightweight support for Ruby's Bundler
+Plug 'gorodinskiy/vim-coloresque' " Color previews in *SS stylesheets
+Plug 'flazz/vim-colorschemes'     " Lots of colorschemes
+Plug 'hail2u/vim-css3-syntax'     " CSS3 syntax support
+Plug 'dhruvasagar/vim-dotoo'      " Org-mode clone that will never be org-mode, but a beast on its own
+Plug 'Lokaltog/vim-easymotion'    " Move insanely fast through open buffers
+Plug 'tpope/vim-fugitive'         " Git integration
+Plug 'nathanaelkane/vim-indent-guides'  " Subtle vertical guides hinting your indentation level
+Plug 'pangloss/vim-javascript'    " JavaScript support
+Plug 'maksimr/vim-jsbeautify'     " De-minify ugly JS stuff
+Plug 'elzr/vim-json'              " More advanced JSON wrangling
+Plug 'groenewege/vim-less'        " LESS support
+Plug 'tpope/vim-markdown'         " Markdown support
+Plug 'xolox/vim-misc'             " Small autoloaded utilities
+Plug 'sickill/vim-monokai'        " Monokai color scheme
+Plug 'mustache/vim-mustache-handlebars'  " Syntax for Mustache and Handlebars templates
+Plug 'kurkale6ka/vim-pairs'       " New punctuation text objects (i.e. ci/ to change between slashes)
+Plug 'spf13/vim-preview'          " Markup previewing for md, rdoc, textile, html, ronn and rst
+Plug 'tpope/vim-rails'            " Rails support
+Plug 'tpope/vim-rake'             " Rake support
+Plug 'tpope/vim-repeat'           " Vim's dot `.` command usable with more complex actions
+Plug 'vim-ruby/vim-ruby'          " Ruby support
+Plug 'garbas/vim-snipmate'        " Code snippets
+Plug 'honza/vim-snippets'         " Code snippets
+Plug 'tpope/vim-surround'         " Change surrounding pair of things into a surrounding pair of other things :-)
+Plug 'tpope/vim-unimpaired'       " Pairs of very handy complementary actions
+Plug 'thinca/vim-unite-history'   " History plugin for Unite
+Plug 'mikewest/vimroom'           " Distraction free editing
+Plug 'airblade/vim-gitgutter'     " Gutter area for VCS changes preview
+Plug 'morhetz/gruvbox'            " Awesome dark retro theme that works in both GUIs and terminals
 call plug#end()
 
 
