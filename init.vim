@@ -212,7 +212,7 @@ nmap ZW :w<CR>
 " Buffer list in normal mode
 nnoremap <C-x> :Bufferlistsw<CR>
 " Unite powered buffer list in normal mode
-nnoremap <C-Space> :Unite buffer<CR>
+nnoremap <C-B> :Unite buffer<CR>
 " Unite powered files list in normal mode
 nnoremap <S-Space> :Unite file<CR>
 " Unite powered lines list in normal mode
