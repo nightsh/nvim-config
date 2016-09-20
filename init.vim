@@ -214,9 +214,9 @@ nnoremap <C-x> :Bufferlistsw<CR>
 " Unite powered buffer list in normal mode
 nnoremap <C-B> :Unite buffer<CR>
 " Unite powered files list in normal mode
-nnoremap <S-Space> :Unite file<CR>
+nnoremap <S-Space> :Unite file_rec<CR>
 " Unite powered lines list in normal mode
-nnoremap <C-Z> :Unite line -start-insert<CR>
+nnoremap <C-L> :Unite line -start-insert<CR>
 " Unite powered register contents in normal mode
 nnoremap <C-P> :Unite register<CR>
 " Minimize and maximize
